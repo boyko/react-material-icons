@@ -3,7 +3,6 @@
   "version": "0.0.1",
   "private": false,
   "license": "MIT",
-  "main": "index.js",
   "scripts": {
     "build": "rimraf lib && svg2react ./SVG/* --es5 && mkdir lib && mv ./SVG/*.react.js ./lib",
     "prepublish": "npm run build",
@@ -28,22 +27,21 @@
     "svgo": "^0.7.2",
     "svgo-loader": "^1.2.1"
   },
-  "description": "Starter boilerplate for React and Redux, using Webpack 2",
+  "description": "React component for the material icons set.",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Stanko/react-redux-webpack2-boilerplate.git"
+    "url": "git+ssh://git@github.com:boyko/react-material-icons.git"
   },
   "keywords": [
     "react",
-    "redux",
-    "webpack2",
-    "boilerplate"
+    "material",
+    "icons"
   ],
-  "author": "Stanko",
+  "author": "Boyko",
   "bugs": {
-    "url": "https://github.com/Stanko/react-redux-webpack2-boilerplate/issues"
+    "url": "https://github.com/boyko/react-material-icons/issues"
   },
-  "homepage": "https://github.com/Stanko/react-redux-webpack2-boilerplate#readme",
+  "homepage": "https://github.com/boyko/react-material-icons#readme",
   "prepush": [
     "npm run lint-break-on-errors --silent"
   ]

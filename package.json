@@ -4,9 +4,7 @@
   "private": false,
   "license": "MIT",
   "scripts": {
-    "build": "rimraf lib && svg2react ./SVG/* --es5 && mkdir lib && mv ./SVG/*.react.js ./lib",
-    "prepublish": "npm run build",
-    "install": "npm run build"
+    "build": "rimraf lib && svg2react ./SVG/* --es5 && mkdir lib && mv ./SVG/*.react.js ./lib"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",

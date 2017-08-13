@@ -1,0 +1,48 @@
+{
+  "name": "react-material-icons",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf lib && svg2react ./SVG/* --es5 && mkdir lib && mv ./SVG/*.react.js ./lib"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.3",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.7.2",
+    "babel-eslint": "^7.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-preset-env": "^1.5.2",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-react-hmre": "^1.1.1",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-runtime": "^6.6.1",
+    "prepush": "^3.1.11",
+    "react-svg-loader": "^1.1.1",
+    "rimraf": "^2.6.1",
+    "svgo": "^0.7.2",
+    "svgo-loader": "^1.2.1"
+  },
+  "description": "Starter boilerplate for React and Redux, using Webpack 2",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Stanko/react-redux-webpack2-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "webpack2",
+    "boilerplate"
+  ],
+  "author": "Stanko",
+  "bugs": {
+    "url": "https://github.com/Stanko/react-redux-webpack2-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Stanko/react-redux-webpack2-boilerplate#readme",
+  "prepush": [
+    "npm run lint-break-on-errors --silent"
+  ]
+}
